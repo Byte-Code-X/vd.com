@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-family: monospace;
+    text-decoration: none;
+}
+.bg {
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.59),rgba(128, 128, 128, 0.59)),url("csm-banner.jpeg");
+    height: 100vh; width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/*Movie details*/
+p {
+    text-align: center;
+    font-size: 2.5vh;
+    margin-left: 56vw;
+    margin-top: 15vh;
+    width: 40vw;
+    height: 16%;
+    border-radius: 0.5vw;
+    color: rgb(20, 139, 224);
+    background-color: rgba(0, 0, 0, 0.36);
+}
+.comment-box {
+    position: absolute;
+    bottom: 15%;
+    border-radius: 1vw;
+    background-color: rgba(6, 6, 6, 0.567);
+    height: 20vh; width: 90%;
+    margin-left: 5vw;
+    box-shadow: 0px 0px 10px 5px black;
+}
+.comment-box h1 {
+    margin: 1vw;
+    font-size: 3vh;
+}
+.comment-box hr {
+    position: absolute;
+    background-color: rgb(20, 139, 224);
+    border: 0;
+    margin-top: 4%;
+    width: 100%;
+    height: 0.2vh;
+}
+.comment-box h2 {
+    font-size: 2.5vh;
+    text-align: center;
+    margin-top: 7%;
+}
+/*Mp4 video*/
+.narutomp4 {
+    border-radius: 0.5vw;
+    margin-left: 5%;
+    margin-top: 10vh;
+    height: 50%;
+    width: 48.1%;
+}
+
+/*header*/
+header {
+    background-color: rgb(50, 50, 50);
+    width: 100%; height: 7vh;
+    position: absolute;
+    margin-top: 0px;
+}
+.logo {
+    font-family: verdana;
+    color: white;
+    background-color: transparent;
+
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 5vw;
+    font-size: 1.6vw;
+}
+#play {
+    font-family: verdana;
+    margin-top: 1%;
+    font-size: 1.6vw;
+    width: 1vw;
+    margin-left: 10.6vw;
+    color: rgb(20, 139, 224);
+}
+.container ul {
+    position: absolute;
+    height: 5vh;
+    width: 50vw;
+    background-color: transparent;
+    margin-top: 2.7vh;
+    margin-left:  15vw;
+}
+.container li {
+    top: -0.4vw;
+    left: -2.5vw;
+}
+.container ul li {
+    width: 1vw; height: 10vh;
+    margin-left: 10vw;
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+}
+.container a {
+    text-transform: capitalize;
+    font-family: monospace;
+    margin-left: 0vh;
+    position: relative;
+    display: inline-block; 
+    width: 7vw; height: 5vh;
+    font-size: 1.3vw;
+    color: white;
+    background-color: transparent;
+}
+.container a:hover {
+    color: rgb(20, 139, 224);
+}
+.head-hr {
+    position: absolute;
+    border: 0;
+    top: 6.8vh;
+    width: 100vw; height: 1.7px;
+    background-color: rgb(20, 139, 224);
+}
+
+</style>
+
+<body>
+    <img class="bg">
+    <header>
+        <div class="container">
+            <ul>
+                <li><a href="vd.html">home</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">credits</a></li>
+            </ul>
+        </div>
+        <div style="width: 1vw; margin-top: 1.5vh;">
+            <a href="vd.html" class="logo">Animix<a href="vd.html" id="play">play</a>
+        </div>
+    </header>
+    <hr class="head-hr">
+
+        <video controls src="naruto.mp4" class="narutomp4"></video>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non velit culpa nesciunt rem ab eaque harum doloremque quos. Ratione beatae cumque tempore nobis perferendis. Illum ea assumenda repudiandae? Nesciunt, necessitatibus!</p>
+    
+    <div class="comment-box">
+        <h1>Comments</h1>
+        <hr>
+        <h2>No comments</h2>
+    </div>
+    
+</body>
+</html>
